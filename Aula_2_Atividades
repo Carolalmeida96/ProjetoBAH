@@ -1,1 +1,18 @@
+import numpy as np
 
+# Ask the user for the first and last numbers of the array
+primeiro_ano = int(input("Primeiro número do Array: "))
+ultimo_ano = int(input("Último número do Array: "))
+
+# Create the array directly using np.arange
+array_anos = np.arange(primeiro_ano, ultimo_ano + 1, dtype=np.int32)
+
+# Print the array and its dtype
+print(array_anos)
+print(array_anos.dtype)
+
+# Reshape the array into a 2x4 matrix
+array_anos = array_anos.reshape(2, 4)
+
+# Print the array and its dtype
+print(array_anos)
